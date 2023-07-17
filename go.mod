@@ -1,4 +1,4 @@
-module github.com/chaosblade-io/chaosblade-operator
+module github.com/e-kuznetsov/chaosblade-operator
 
 require (
 	github.com/chaosblade-io/chaosblade-exec-cri v1.7.2
