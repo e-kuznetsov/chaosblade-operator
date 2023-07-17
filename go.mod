@@ -9,7 +9,7 @@ require (
 	github.com/go-logr/zapr v0.2.0 // indirect
 	github.com/go-openapi/spec v0.19.4
 	github.com/hanwen/go-fuse v1.0.0
-	github.com/operator-framework/operator-sdk v0.17.0
+	github.com/operator-framework/operator-sdk v1.30.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/pflag v1.0.5
 	k8s.io/api v0.20.6
