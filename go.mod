@@ -19,6 +19,6 @@ require (
 	sigs.k8s.io/controller-runtime v0.6.0
 )
 
-replace k8s.io/client-go => k8s.io/client-go v0.20.6 // Required by prometheus-operator
-
+replace k8s.io/client-go => k8s.io/client-go v0.20.6
+replace  github.com/chaosblade-io/chaosblade-operator => github.com/e-kuznetsov/chaosblade-operator v1.7.15
 go 1.13
