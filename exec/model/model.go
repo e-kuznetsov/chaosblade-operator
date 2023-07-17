@@ -20,7 +20,7 @@ import (
 	"github.com/chaosblade-io/chaosblade-exec-cri/exec"
 	"github.com/chaosblade-io/chaosblade-spec-go/spec"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
 )
 
 // ResourceExpModelSpec contains node, pod, container

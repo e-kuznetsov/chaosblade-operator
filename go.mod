@@ -20,5 +20,4 @@ require (
 )
 
 replace k8s.io/client-go => k8s.io/client-go v0.20.6
-replace  github.com/chaosblade-io/chaosblade-operator => github.com/e-kuznetsov/chaosblade-operator v1.7.15
 go 1.13

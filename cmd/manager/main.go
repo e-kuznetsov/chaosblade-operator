@@ -40,14 +40,14 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/runtime/log"
 	"sigs.k8s.io/controller-runtime/pkg/runtime/signals"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/apis"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/controller"
-	operator "github.com/chaosblade-io/chaosblade-operator/pkg/runtime"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/chaosblade"
-	webhookcfg "github.com/chaosblade-io/chaosblade-operator/pkg/webhook"
-	mutator "github.com/chaosblade-io/chaosblade-operator/pkg/webhook/pod"
-	"github.com/chaosblade-io/chaosblade-operator/version"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/apis"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/controller"
+	operator "github.com/e-kuznetsov/chaosblade-operator/pkg/runtime"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/chaosblade"
+	webhookcfg "github.com/e-kuznetsov/chaosblade-operator/pkg/webhook"
+	mutator "github.com/e-kuznetsov/chaosblade-operator/pkg/webhook/pod"
+	"github.com/e-kuznetsov/chaosblade-operator/version"
 )
 
 func printVersion() {

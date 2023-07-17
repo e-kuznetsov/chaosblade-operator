@@ -26,9 +26,9 @@ import (
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/exec/model"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/exec/model"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
 )
 
 type FailPodActionSpec struct {

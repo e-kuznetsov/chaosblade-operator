@@ -17,7 +17,7 @@
 package community
 
 import (
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/chaosblade"
 )
 
 const Community = "community"

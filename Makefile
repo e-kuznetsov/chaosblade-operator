@@ -23,7 +23,7 @@ BUILD_IMAGE_PATH=build/image/blade
 OS_YAML_FILE_NAME=chaosblade-k8s-spec-$(BLADE_VERSION).yaml
 OS_YAML_FILE_PATH=$(BUILD_TARGET_YAML)/$(OS_YAML_FILE_NAME)
 
-VERSION_PKG=github.com/chaosblade-io/chaosblade-operator/version
+VERSION_PKG=github.com/e-kuznetsov/chaosblade-operator/version
 GO_X_FLAGS=-X=$(VERSION_PKG).CombinedVersion=$(BLADE_VERSION),$(BLADE_VENDOR)
 GO_FLAGS=-ldflags $(GO_X_FLAGS)
 
@@ -60,16 +60,16 @@ build_linux:
 	docker build -f build/musl/Dockerfile -t chaosblade-operator-build-musl:latest build/musl
 	docker run --rm \
 		-v $(shell echo -n ${GOPATH}):/go \
-		-v $(shell pwd):/go/src/github.com/chaosblade-io/chaosblade-operator \
-		-w /go/src/github.com/chaosblade-io/chaosblade-operator \
+		-v $(shell pwd):/go/src/github.com/e-kuznetsov/chaosblade-operator \
+		-w /go/src/github.com/e-kuznetsov/chaosblade-operator \
 		chaosblade-operator-build-musl:latest
 
 build_arm64:
 	docker run --rm --privileged multiarch/qemu-user-static:register --reset
 	docker run --rm \
 		-v $(shell echo -n ${GOPATH}):/go \
-		-v $(shell pwd):/go/src/github.com/chaosblade-io/chaosblade-operator \
-		-w /go/src/github.com/chaosblade-io/chaosblade-operator \
+		-v $(shell pwd):/go/src/github.com/e-kuznetsov/chaosblade-operator \
+		-w /go/src/github.com/e-kuznetsov/chaosblade-operator \
 		chaosbladeio/chaosblade-build-arm:latest
 
 pre_build:

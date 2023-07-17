@@ -38,9 +38,9 @@ import (
 	pkglabels "k8s.io/apimachinery/pkg/labels"
 	cli "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/chaosblade"
 )
 
 func checkExperimentStatus(ctx context.Context, expModel *spec.ExpModel, statuses []v1alpha1.ResourceStatus, identifiers []ExperimentIdentifierInPod, client *channel.Client) {

@@ -9,8 +9,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/chaosblade"
 )
 
 /*

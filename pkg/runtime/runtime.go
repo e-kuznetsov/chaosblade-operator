@@ -19,10 +19,10 @@ package runtime
 import (
 	"github.com/spf13/pflag"
 
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/chaosblade"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/product/aliyun"
-	_ "github.com/chaosblade-io/chaosblade-operator/pkg/runtime/product/community"
-	"github.com/chaosblade-io/chaosblade-operator/version"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/product/aliyun"
+	_ "github.com/e-kuznetsov/chaosblade-operator/pkg/runtime/product/community"
+	"github.com/e-kuznetsov/chaosblade-operator/version"
 )
 
 var flagSet *pflag.FlagSet

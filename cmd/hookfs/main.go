@@ -30,7 +30,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"sigs.k8s.io/controller-runtime/pkg/runtime/signals"
 
-	chaosbladehook "github.com/chaosblade-io/chaosblade-operator/pkg/hookfs"
+	chaosbladehook "github.com/e-kuznetsov/chaosblade-operator/pkg/hookfs"
 )
 
 var (

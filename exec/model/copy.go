@@ -32,7 +32,7 @@ import (
 	"github.com/chaosblade-io/chaosblade-spec-go/util"
 	"github.com/sirupsen/logrus"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
 )
 
 type CopyOptions struct {

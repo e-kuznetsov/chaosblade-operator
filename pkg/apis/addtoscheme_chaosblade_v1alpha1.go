@@ -17,7 +17,7 @@
 package apis
 
 import (
-	"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	"github.com/e-kuznetsov/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
 )
 
 func init() {

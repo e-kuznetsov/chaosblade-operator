@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"github.com/chaosblade-io/chaosblade-exec-os/exec/cpu"
 	"github.com/chaosblade-io/chaosblade-exec-os/exec/disk"
-        "github.com/chaosblade-io/chaosblade-exec-os/exec/file"
+	"github.com/chaosblade-io/chaosblade-exec-os/exec/file"
 	"github.com/chaosblade-io/chaosblade-exec-os/exec/mem"
 	"github.com/chaosblade-io/chaosblade-exec-os/exec/network"
 	"github.com/chaosblade-io/chaosblade-exec-os/exec/network/tc"
@@ -30,8 +30,8 @@ import (
 
 	"github.com/chaosblade-io/chaosblade-spec-go/spec"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/exec/model"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/exec/model"
 
 	osModel "github.com/chaosblade-io/chaosblade-exec-os/exec/model"
 )
@@ -400,7 +400,7 @@ func getResourceFlags() []spec.ExpFlagSpec {
 func NewSelfExpModelCommandSpec() spec.ExpModelCommandSpec {
 	return &SelfExpModelCommandSpec{
 		spec.BaseExpModelCommandSpec{
-			ExpFlags: []spec.ExpFlagSpec{},
+			ExpFlags:   []spec.ExpFlagSpec{},
 			ExpActions: []spec.ExpActionCommandSpec{
 				// TODO
 				//NewCordonActionCommandSpec(),

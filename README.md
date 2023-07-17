@@ -35,7 +35,7 @@ The lowest version of kubernetes supported is 1.12. Chaosblade operator can be i
 Note: For the following `VERSION`, please use the latest version number instead
 
 ### Helm v2
-* Download the latest `chaosblade-operator-VERSION-v2.tgz` package at [Release](https://github.com/chaosblade-io/chaosblade-operator/releases)
+* Download the latest `chaosblade-operator-VERSION-v2.tgz` package at [Release](https://github.com/e-kuznetsov/chaosblade-operator/releases)
 * Install using `helm install --namespace chaosblade --name chaosblade-operator chaosblade-operator-VERSION-v2.tgz`
 * Use `kubectl get pod -l part-of=chaosblade -n chaosblade` to check the installation status of the Pod. If both are running, the installation was successful
 * Use the following command to uninstall, pay attention to the execution order:
@@ -44,7 +44,7 @@ kubectl delete crd chaosblades.chaosblade.io
 helm del --purge chaosblade-operator
 ```
 ### Helm v3
-* Download the latest `chaosblade-operator-VERSION-v3.tgz` package at [Release](https://github.com/chaosblade-io/chaosblade-operator/releases)
+* Download the latest `chaosblade-operator-VERSION-v3.tgz` package at [Release](https://github.com/e-kuznetsov/chaosblade-operator/releases)
 * Use `helm install chaosblade-operator chaosblade-operator-VERSION-v3.tgz --namespace chaosblade` command to install
 * Use `kubectl get pod -l part-of=chaosblade -n chaosblade` to check the installation status of the Pod. If both are running, the installation was successful
 * Use the following command to uninstall, pay attention to the execution order:
@@ -53,7 +53,7 @@ kubectl delete crd chaosblades.chaosblade.io
 helm uninstall chaosblade-operator -n chaosblade
 ```
 ### Kubectl
-* Download the latest `chaosblade-operator-yaml-VERSION.tar.gz` package at [Release](https://github.com/chaosblade-io/chaosblade-operator/releases)
+* Download the latest `chaosblade-operator-yaml-VERSION.tar.gz` package at [Release](https://github.com/e-kuznetsov/chaosblade-operator/releases)
 * After decompression, execute `kubectl apply -f chaosblade-operator-yaml-VERSION/` installation
 * Use `kubectl get pod -l part-of=chaosblade -n chaosblade` to check the installation status of the Pod. If both are running, the installation was successful
 * Use the following command to uninstall, pay attention to the execution order:
@@ -146,7 +146,7 @@ Or delete this blade resource directly:
 ```
 kubectl delete blade loss-node-network-by-names
 ```
-You can also edit the yaml file to update the content of the experiment and the chaosblade operator will complete the update of the experiment. See more examples: [Examples](https://github.com/chaosblade-io/chaosblade-operator/tree/master/examples)
+You can also edit the yaml file to update the content of the experiment and the chaosblade operator will complete the update of the experiment. See more examples: [Examples](https://github.com/e-kuznetsov/chaosblade-operator/tree/master/examples)
 
 ### Execute with chaosblade cli tool
 ```

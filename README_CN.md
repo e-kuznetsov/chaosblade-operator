@@ -29,7 +29,7 @@ Chaosblade Operator 是混沌工程实验工具 ChaosBlade 下的一款面向云
 支持的 Kubernetes 最小版本是 v1.12，chaosblade operator 可通过 kubectl 或者 helm 进行安装，安装方式如下：
 注意：以下的 `VERSION` 请使用最新的版本号替代
 ### Helm v2
-* 在 [Release](https://github.com/chaosblade-io/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-VERSION-v2.tgz` 包
+* 在 [Release](https://github.com/e-kuznetsov/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-VERSION-v2.tgz` 包
 * 使用 `helm install --namespace kube-system --name chaosblade-operator chaosblade-operator-VERSION-v2.tgz` 命令安装
 * 使用 `kubectl get pod -l part-of=chaosblade -n kube-system` 查看 Pod 的安装状态，如果都是 running 状态，说明安装成功
 * 使用以下命令进行卸载，注意执行顺序：
@@ -38,7 +38,7 @@ kubectl delete crd chaosblades.chaosblade.io
 helm del --purge chaosblade-operator
 ```
 ### Helm v3
-* 在 [Release](https://github.com/chaosblade-io/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-VERSION-v3.tgz` 包
+* 在 [Release](https://github.com/e-kuznetsov/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-VERSION-v3.tgz` 包
 * 使用 `helm install chaosblade-operator chaosblade-operator-VERSION-v3.tgz --namespace kube-system` 命令安装
 * 使用 `kubectl get pod -l part-of=chaosblade -n kube-system` 查看 Pod 的安装状态，如果都是 running 状态，说明安装成功
 * 使用以下命令卸载，注意执行顺序:
@@ -48,7 +48,7 @@ helm uninstall chaosblade-operator -n kube-system
 ```
 
 ### Kubectl
-* 在 [Release](https://github.com/chaosblade-io/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-yaml-VERSION.tar.gz` 包
+* 在 [Release](https://github.com/e-kuznetsov/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-yaml-VERSION.tar.gz` 包
 * 解压后执行 `kubectl apply -f chaosblade-operator-yaml-VERSION/` 安装
 * 使用 `kubectl get pod -l part-of=chaosblade -n kube-system` 查看 Pod 的安装状态，如果都是 running 状态，说明安装成功
 * 使用以下命令卸载，注意执行顺序：
@@ -141,7 +141,7 @@ kubectl delete -f loss-node-network-by-names.yaml
 ```
 kubectl delete blade loss-node-network-by-names
 ```
-还可以编辑 yaml 文件，更新实验内容执行，chaosblade operator 会完成实验的更新操作。更多案例请查看 [Examples](https://github.com/chaosblade-io/chaosblade-operator/tree/master/examples)
+还可以编辑 yaml 文件，更新实验内容执行，chaosblade operator 会完成实验的更新操作。更多案例请查看 [Examples](https://github.com/e-kuznetsov/chaosblade-operator/tree/master/examples)
 
 ### 使用 chaosblade cli 工具执行
 ```

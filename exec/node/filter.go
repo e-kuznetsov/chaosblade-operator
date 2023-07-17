@@ -28,8 +28,8 @@ import (
 
 	"github.com/chaosblade-io/chaosblade-spec-go/spec"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/exec/model"
+	"github.com/e-kuznetsov/chaosblade-operator/channel"
+	"github.com/e-kuznetsov/chaosblade-operator/exec/model"
 )
 
 func (e *ExpController) getMatchedNodeResources(ctx context.Context, expModel spec.ExpModel) ([]v1.Node, *spec.Response) {
